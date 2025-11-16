@@ -1,0 +1,47 @@
+/* reset universal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+header {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    margin-right: 10%;
+}
+
+.nav-header {
+    font-size: 1.8rem;
+}
+
+.quickscope {
+    display: flex;
+    margin: auto;
+    justify-self: center;
+}
+
+#frase-efeito{
+    text-align:center;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-weight:100;
+}
+
+#frase-efeito span{
+    font-size: 0.6rem;
+}

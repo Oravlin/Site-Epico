@@ -98,7 +98,7 @@ header::before {
 .case-vitrine-CS {
     display: inline-flex;
     gap: 0.7rem;
-    animation: scrollVitrine-cs 10s linear infinite;
+    animation: scrollVitrine-cs 5s linear infinite;
     animation-play-state: running;
     padding: 2rem;
     border-radius: 10px;
@@ -107,7 +107,7 @@ header::before {
 .case-vitrine-RL {
     display: inline-flex;
     gap: 0.7rem;
-    animation: scrollVitrine-cs 10s linear infinite;
+    animation: scrollVitrine-cs 5s linear infinite;
     animation-play-state: running;
     padding: 2rem;
     border-radius: 10px;

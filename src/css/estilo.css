@@ -45,23 +45,35 @@ header {
     font-size: 0.6rem;
 }
 
+/* cases maneiras */
 .cases-container {
     height: auto;
-    padding:10px;
-    width:100%;
+    padding: 10px;
+    width: 100%;
     overflow: hidden;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
-.case-vitrine:hover{
+.case-vitrine-CS:hover {
     animation-play-state: paused;
 }
 
-.case-vitrine{
+.case-vitrine-CS {
     display: inline-flex;
     gap: 0.7rem;
-    animation: scrollVitrine 10s linear infinite;
+    animation: scrollVitrine-cs 10s linear infinite;
     animation-play-state: running;
+}
+
+.case-vitrine-RL {
+    display:inline-flex;
+    gap: 0.7rem;
+    animation: scrollVitrine-cs 10s linear infinite;
+    animation-play-state: running;
+}
+
+.case-vitrine-RL:hover {
+    animation-play-state: paused;
 }
 
 .case-item {
@@ -79,9 +91,11 @@ header {
     transform: scale(105%);
 }
 
-.case-item img {
+.case-img {
     background: #212121;
     border-radius: 20px;
+    width: 15rem;
+    height: auto;
 }
 
 .case-item h1 {
@@ -120,25 +134,25 @@ header {
     border: none;
 }
 
-.carrinho-icon::before{
+.carrinho-icon::before {
     background-image: none;
-    width:0;
-    transition:0.5s ease-in-out;
+    width: 0;
+    transition: 0.5s ease-in-out;
 }
 
-.btn-comprar:hover .carrinho-icon{
+.btn-comprar:hover .carrinho-icon {
     transition: 0.5s ease-in-out;
-    margin-right:10px;
-    width:30px;
-    height:auto;
+    margin-right: 10px;
+    width: 30px;
+    height: auto;
     background-image: url(../assets/shopIcon.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.case-titulo{
-    text-align:center;
-    font-size:3rem;
+.case-titulo {
+    text-align: center;
+    font-size: 3rem;
 }
 
 @keyframes arcoIris {
@@ -151,7 +165,7 @@ header {
     }
 }
 
-@keyframes scrollVitrine {
+@keyframes scrollVitrine-cs {
     from {
         transform: translateX(0);
     }
@@ -160,3 +174,14 @@ header {
         transform: translateX(-50%);
     }
 }
+
+@keyframes scrollVitrine-rl{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(50%);
+    }
+}
+
+/* fim das cases :) */

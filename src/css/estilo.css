@@ -240,7 +240,7 @@ header::before {
     color: #fff;
     padding: 0.4rem;
     border-radius: 15px;
-    gap:10px;
+    gap: 10px;
 }
 
 .faq-pergunta {
@@ -248,28 +248,28 @@ header::before {
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    display:flex;
+    display: flex;
 }
 
 .faq-pergunta::marker {
     content: "";
 }
 
-.faq-item:not(:last-child){
-    margin-bottom:0.8rem;
+.faq-item:not(:last-child) {
+    margin-bottom: 0.8rem;
 }
 
 .icon-faq {
     background-image: url(../assets/cobrinha.png);
     background-position: center;
     background-size: cover;
-    position:absolute;
-    width:20px;
-    height:20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
     inset-inline-end: 2rem;
 }
 
-.faq-item[open] .faq-pergunta{
+.faq-item[open] .faq-pergunta {
     border-radius: 10px 10px 0px 0px
 }
 
@@ -282,4 +282,18 @@ header::before {
     background: #5a5a5a;
     padding: 0.7rem;
     border-radius: 0px 0px 10px 10px;
+}
+
+.gif2016 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    width:640px;
+    height:360px;
+}
+
+.gif2016:hover {
+    opacity: 1;
 }

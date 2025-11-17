@@ -45,6 +45,25 @@ header {
     font-size: 0.6rem;
 }
 
+.cases-container {
+    height: auto;
+    padding:10px;
+    width:100%;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.case-vitrine:hover{
+    animation-play-state: paused;
+}
+
+.case-vitrine{
+    display: inline-flex;
+    gap: 0.7rem;
+    animation: scrollVitrine 10s linear infinite;
+    animation-play-state: running;
+}
+
 .case-item {
     width: fit-content;
     border: 2px solid#000;
@@ -89,16 +108,37 @@ header {
     background: #292929;
     cursor: pointer;
     border: 2px solid #000;
-    transition: 0.2s ease;
+    transition: 0.5s ease-in-out;
 }
 
 .btn-comprar:hover {
-    transition: ease 0.2s;
+    transition: ease-in-out 0.5s;
     transform: scale(105%);
     background-image: linear-gradient(135deg, #ff0066, #ffcc00, #00cc99, #0066ff);
     animation: arcoIris 2s linear infinite;
     color: #fff;
     border: none;
+}
+
+.carrinho-icon::before{
+    background-image: none;
+    width:0;
+    transition:0.5s ease-in-out;
+}
+
+.btn-comprar:hover .carrinho-icon{
+    transition: 0.5s ease-in-out;
+    margin-right:10px;
+    width:30px;
+    height:auto;
+    background-image: url(../assets/shopIcon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.case-titulo{
+    text-align:center;
+    font-size:3rem;
 }
 
 @keyframes arcoIris {
@@ -108,5 +148,15 @@ header {
 
     to {
         filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes scrollVitrine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
     }
 }

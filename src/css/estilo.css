@@ -98,7 +98,7 @@ header::before {
 .case-vitrine-CS {
     display: inline-flex;
     gap: 0.7rem;
-    animation: scrollVitrine-cs 5s linear infinite;
+    animation: scrollVitrine-cs 8s linear infinite;
     animation-play-state: running;
     padding: 2rem;
     border-radius: 10px;
@@ -107,7 +107,7 @@ header::before {
 .case-vitrine-RL {
     display: inline-flex;
     gap: 0.7rem;
-    animation: scrollVitrine-cs 5s linear infinite;
+    animation: scrollVitrine-cs 8s linear infinite;
     animation-play-state: running;
     padding: 2rem;
     border-radius: 10px;
@@ -241,11 +241,14 @@ header::before {
     padding: 0.4rem;
     border-radius: 15px;
     gap: 10px;
+    margin: auto;
+    width:60%;
+    margin-top:10%;
 }
 
 .faq-pergunta {
     background: #00630d;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -266,7 +269,7 @@ header::before {
     position: absolute;
     width: 20px;
     height: 20px;
-    inset-inline-end: 2rem;
+    inset-inline-end: 22%;
 }
 
 .faq-item[open] .faq-pergunta {
@@ -290,10 +293,14 @@ header::before {
     transform: translateX(-50%);
     z-index: 10;
     opacity: 0;
-    width:640px;
-    height:360px;
+    width: 640px;
+    height: 360px;
 }
 
 .gif2016:hover {
     opacity: 1;
+}
+
+.faq-container .case-titulo {
+    margin-bottom:1rem;
 }
